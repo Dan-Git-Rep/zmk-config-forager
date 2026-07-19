@@ -78,6 +78,47 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&kp ESC>;
+            layers = <0>;
+        };
+        combo_tab {
+            timeout-ms = <50>;
+            key-positions = <10 11>;
+            bindings = <&kp TAB>;
+            layers = <0>;
+        };
+        combo_lshift {
+            timeout-ms = <50>;
+            key-positions = <20 21>;
+            bindings = <&kp LSHFT>;
+            layers = <0>;
+        };
+        combo_del {
+            timeout-ms = <50>;
+            key-positions = <8 9>;
+            bindings = <&kp DEL>;
+            layers = <0>;
+        };
+        combo_bspc {
+            timeout-ms = <50>;
+            key-positions = <18 19>;
+            bindings = <&kp BSPC>;
+            layers = <0>;
+        };
+        combo_rshift {
+            timeout-ms = <50>;
+            key-positions = <28 29>;
+            bindings = <&kp LSHFT>;
+            layers = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -93,8 +134,8 @@
         nav {
             bindings = <
             &trans          &trans          &trans          &trans          &trans                                          &kp PAGE_UP     &kp LC(PG_UP)   &kp UP          &kp LC(PG_DN)   &kp DELETE
-            &trans          &kp LCTRL       &kp LALT        &kp LGUI        &trans                                          &kp PAGE_DOWN   &kp LEFT        &kp DOWN        &kp RIGHT       &kp BSLH
-            &trans          &trans          &trans          &trans          &trans                                          &trans          &kp HOME        &kp END         &kp LC(SPACE)   &kp LC(SPACE)
+            &trans          &kp LCTRL       &kp LALT        &kp LC(C)       &kp LC(V)                                       &kp PAGE_DOWN   &kp LEFT        &kp DOWN        &kp RIGHT       &kp BSLH
+            &trans          &trans          &trans          &kp LC(Z)       &kp LC(LS(Z))                                   &trans          &kp HOME        &kp END         &kp LC(SPACE)   &kp LC(SPACE)
                                                                             &mo SYM         &kp LSHFT       &trans          &trans
             >;
         };
