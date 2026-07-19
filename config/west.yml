@@ -8,6 +8,8 @@ manifest:
       url-base: https://github.com/carrefinho     # <---
     - name: caksoylar                             # <---
       url-base: https://github.com/caksoylar      # <---
+    - name: englmaxi                              # <---
+      url-base: https://github.com/englmaxi       # <---
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -19,5 +21,8 @@ manifest:
     - name: zmk-rgbled-widget                     # <---
       remote: caksoylar                           # <---
       revision: e6b467792a1dabef8cfa5c9fd26bfefc9c16662b # <---
+    - name: zmk-dongle-display                    # <---
+      remote: englmaxi                            # <---
+      revision: 2bb333f87136d33e94a49d86236ed9ec254a8060 # <---
   self:
     path: config
