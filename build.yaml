@@ -28,7 +28,7 @@ include:
   - board: nice_nano@2.0.0/nrf52840/zmk
     shield: forager_central_dongle dongle_display
     snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n -DCONFIG_ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING=n
     artifact-name: forager_central_dongle_oled
   - board: xiao_ble/nrf52840/zmk
     shield: settings_reset
