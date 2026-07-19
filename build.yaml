@@ -30,3 +30,9 @@ include:
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
     artifact-name: forager_central_dongle_oled
+  - board: xiao_ble/nrf52840/zmk
+    shield: settings_reset
+    artifact-name: settings_reset_xiao_ble
+  - board: nice_nano@2.0.0/nrf52840/zmk
+    shield: settings_reset
+    artifact-name: settings_reset_nice_nano
