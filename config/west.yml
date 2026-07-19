@@ -10,10 +10,12 @@ manifest:
       url-base: https://github.com/caksoylar      # <---
     - name: englmaxi                              # <---
       url-base: https://github.com/englmaxi       # <---
+    - name: H0N3YC4T                              # <---
+      url-base: https://github.com/H0N3YC4T       # <---
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: 83bc82dbfdcda4ef392461202534a7cc337ca055
+      remote: H0N3YC4T
+      revision: 9a4ae7b9220c225f6b5ed891be45fb8dcb583e11
       import: app/west.yml
     - name: forager-zmk-module                    # <---
       remote: carrefinho                          # <---
