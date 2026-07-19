@@ -21,13 +21,13 @@
 include:
   - board: xiao_ble/nrf52840/zmk
     shield: forager_left rgbled_adapter
-    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n -DCONFIG_ZMK_BLE_EXPERIMENTAL_CONN=y
   - board: xiao_ble/nrf52840/zmk
     shield: forager_right rgbled_adapter
-    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n -DCONFIG_ZMK_BLE_EXPERIMENTAL_CONN=y
   - board: nice_nano@2.0.0/nrf52840/zmk
     shield: forager_central_dongle dongle_display
-    cmake-args: -DCONFIG_ZMK_STUDIO=n -DCONFIG_ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING=n
+    cmake-args: -DCONFIG_ZMK_STUDIO=n -DCONFIG_ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING=n -DCONFIG_ZMK_BLE_EXPERIMENTAL_CONN=y
     artifact-name: forager_central_dongle_oled
   - board: xiao_ble/nrf52840/zmk
     shield: settings_reset
