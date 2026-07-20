@@ -75,7 +75,7 @@
             timeout-ms = <50>;
             key-positions = <26 27>;
             bindings = <&kp LSHFT>;
-            layers = <0>;
+            layers = <0 2>;
         };
     };
 
