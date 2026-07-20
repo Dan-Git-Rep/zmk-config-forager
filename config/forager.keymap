@@ -69,7 +69,7 @@
         };
         combo_tab {
             timeout-ms = <50>;
-            key-positions = <10 11>;
+            key-positions = <12 13>;
             bindings = <&kp TAB>;
             layers = <0>;
         };
@@ -124,7 +124,7 @@
             bindings = <
             &kp N1          &kp N2          &kp N3          &kp N4          &kp N5                                          &kp N6          &kp N7          &kp N8          &kp N9          &kp N0
             &kp LPAR        &kp RPAR        &kp HASH        &kp LC(C)       &kp LC(V)                                       &kp MINUS       &trans          &trans          &kp LBKT        &kp RBKT
-            &trans          &trans          &trans          &kp LC(Z)       &kp LC(LS(Z))                                   &trans          &trans          &kp LS(LBKT)    &trans          &kp RBRC
+            &trans          &trans          &trans          &kp LC(Z)       &kp LC(LS(Z))                                   &trans          &kp PLUS        &kp ASTERISK    &kp LS(LBKT)    &kp RBRC
                                                                             &trans          &trans          &trans          &mo NAV
             >;
         };
