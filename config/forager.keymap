@@ -63,7 +63,7 @@
 
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <0 1>;
+            key-positions = <2 3>;
             bindings = <&kp ESC>;
             layers = <0>;
         };
@@ -75,13 +75,13 @@
         };
         combo_lshift {
             timeout-ms = <50>;
-            key-positions = <20 21>;
+            key-positions = <22 23>;
             bindings = <&kp LSHFT>;
             layers = <0>;
         };
         combo_del {
             timeout-ms = <50>;
-            key-positions = <8 9>;
+            key-positions = <6 7>;
             bindings = <&kp DEL>;
             layers = <0>;
         };
@@ -93,7 +93,7 @@
         };
         combo_rshift {
             timeout-ms = <50>;
-            key-positions = <28 29>;
+            key-positions = <26 27>;
             bindings = <&kp LSHFT>;
             layers = <0>;
         };
@@ -114,7 +114,7 @@
         nav {
             bindings = <
             &trans          &trans          &trans          &trans          &trans                                          &kp PAGE_UP     &kp LC(PG_UP)   &kp UP          &kp LC(PG_DN)   &kp DELETE
-            &trans          &kp LCTRL       &kp LALT        &trans          &trans                                          &kp MINUS       &kp LEFT        &kp DOWN        &kp RIGHT       &kp BSLH
+            &trans          &kp LCTRL       &kp LALT        &trans          &trans                                          &kp PAGE_DOWN   &kp LEFT        &kp DOWN        &kp RIGHT       &kp BSLH
             &trans          &trans          &trans          &trans          &trans                                          &trans          &kp HOME        &kp END         &kp LC(SPACE)   &kp LC(SPACE)
                                                                             &mo NUM         &trans          &trans          &trans
             >;
@@ -123,8 +123,8 @@
         num {
             bindings = <
             &kp N1          &kp N2          &kp N3          &kp N4          &kp N5                                          &kp N6          &kp N7          &kp N8          &kp N9          &kp N0
-            &kp LPAR        &kp RPAR        &kp HASH        &kp LC(C)       &kp LC(V)                                       &trans          &trans          &trans          &kp LBKT        &kp RBKT
-            &trans          &trans          &trans          &kp LC(Z)       &kp LC(LS(Z))                                   &trans          &trans          &kp LBRC        &trans          &kp RBRC
+            &kp LPAR        &kp RPAR        &kp HASH        &kp LC(C)       &kp LC(V)                                       &kp MINUS       &trans          &trans          &kp LBKT        &kp RBKT
+            &trans          &trans          &trans          &kp LC(Z)       &kp LC(LS(Z))                                   &trans          &trans          &kp LS(LBKT)    &trans          &kp RBRC
                                                                             &trans          &trans          &trans          &mo NAV
             >;
         };
