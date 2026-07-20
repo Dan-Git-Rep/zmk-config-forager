@@ -28,6 +28,13 @@
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
+        osht: os_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
     };
 
     conditional_layers {
@@ -57,7 +64,7 @@
             timeout-ms = <50>;
             key-positions = <22 23>;
             bindings = <&kp LSHFT>;
-            layers = <0>;
+            layers = <0 2>;
         };
         combo_del {
             timeout-ms = <50>;
@@ -87,7 +94,7 @@
             AS(Q)           AS(W)           AS(E)           AS(R)           AS(T)                                           AS(Y)           AS(U)           AS(I)           AS(O)           AS(P)
             AS(A)           AS(S)           AS(D)           AS(F)           AS(G)                                           AS(H)           AS(J)           AS(K)           AS(L)           &kp SEMI
             AS(Z)           AS(X)           AS(C)           AS(V)           AS(B)                                           AS(N)           AS(M)           AS(COMMA)       AS(DOT)         AS(FSLH)
-                                                                            &mo NUM         &kp RET         &kp SPACE       &mo NAV
+                                                                            &mo NUM         &ht LGUI RET    &kp SPACE       &mo NAV
             >;
         };
 
@@ -103,8 +110,8 @@
         num {
             bindings = <
             &kp N1          &kp N2          &kp N3          &kp N4          &kp N5                                          &kp N6          &kp N7          &kp N8          &ht UNDERSCORE N9   &ht QMARK N0
-            &kp LPAR        &kp RPAR        &kp HASH        &ht LC(C) LG(C) &ht LC(V) LG(V)                                 &kp MINUS       &trans          &trans          &kp LBKT        &ht APOS RBKT
-            &trans          &trans          &trans          &kp LC(Z)       &kp LC(LS(Z))                                   &trans          &kp PLUS        &kp ASTERISK    &kp LS(LBKT)    &kp RBRC
+            &kp LPAR        &kp RPAR        &kp HASH        &osht LC(C) LG(C)   &osht LC(V) LG(V)                           &kp MINUS       &trans          &trans          &ht LBKT LS(APOS)   &ht RBKT APOS
+            &trans          &trans          &trans          &osht LC(Z) LG(Z)   &osht LC(LS(Z)) LG(LS(Z))                   &kp EQUAL       &kp PLUS        &kp ASTERISK    &kp LS(LBKT)    &kp RBRC
                                                                             &trans          &trans          &trans          &mo NAV
             >;
         };
