@@ -114,7 +114,7 @@
         nav {
             bindings = <
             &trans          &trans          &trans          &trans          &trans                                          &kp PAGE_UP     &kp LC(PG_UP)   &kp UP          &kp LC(PG_DN)   &kp DELETE
-            &trans          &kp LCTRL       &kp LALT        &trans          &trans                                          &kp PAGE_DOWN   &kp LEFT        &kp DOWN        &kp RIGHT       &kp BSLH
+            &trans          &kp LCTRL       &kp LALT        &trans          &kp CAPS                                        &kp PAGE_DOWN   &kp LEFT        &kp DOWN        &kp RIGHT       &kp BSLH
             &trans          &trans          &trans          &trans          &trans                                          &trans          &kp HOME        &kp END         &kp LC(SPACE)   &kp LC(SPACE)
                                                                             &mo NUM         &trans          &trans          &trans
             >;
